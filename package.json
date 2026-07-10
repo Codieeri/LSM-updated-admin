@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm install --prefix client && npm run build --prefix client && rm -rf dist && mkdir dist && cp -r client/dist/* dist/"
+    "build": "npm install --prefix client && npm run build --prefix client",
+    "built": "npm run build"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
