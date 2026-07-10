@@ -1,0 +1,111 @@
+nohup: ignoring input
+
+> local-sm-client@1.0.0 dev
+> vite
+
+
+  VITE v6.4.3  ready in 119 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+2:38:42 AM [vite] vite.config.ts changed, restarting server...
+2:38:42 AM [vite] server restarted.
+2:49:48 AM [vite] http proxy error: /api/admin/applications?t=1783026288163
+Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1705:16)
+2:49:53 AM [vite] http proxy error: /api/admin/applications?t=1783026293163
+Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1705:16)
+9:33:36 PM [vite] http proxy error: /api/admin/applications?t=1783007316335
+Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1705:16)
+9:33:46 PM [vite] http proxy error: /api/admin/applications?t=1783007326335
+Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1705:16)
+9:51:07 PM [vite] (client) hmr update /src/pages/ApplicantsPage.tsx
+9:51:07 PM [vite] Internal server error: /media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/src/pages/ApplicantsPage.tsx: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (637:12)
+
+  635 |       )}
+  636 |               </div>
+> 637 |             </div>
+      |             ^
+  638 |
+  639 |             {/* Resume Links */}
+  640 |             <div style={{ display: 'flex', gap: '1rem', borderBottom: '1px solid var(--border)', paddingBottom: '1rem' }}>
+  Plugin: vite:react-babel
+  File: /media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/src/pages/ApplicantsPage.tsx:637:12
+  635|        )}
+  636|                </div>
+  637|              </div>
+     |              ^
+  638|  
+  639|              {/* Resume Links */}
+      at constructor (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:365:19)
+      at TypeScriptParserMixin.raise (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:6616:19)
+      at TypeScriptParserMixin.jsxParseElementAt (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:4754:18)
+      at TypeScriptParserMixin.jsxParseElement (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:4761:17)
+      at TypeScriptParserMixin.parseExprAtom (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:4771:19)
+      at TypeScriptParserMixin.parseExprSubscripts (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:11098:23)
+      at TypeScriptParserMixin.parseUpdate (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:11083:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:11063:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:9854:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10916:61)
+      at TypeScriptParserMixin.parseExprOps (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10921:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10898:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10848:21)
+      at /media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:9792:39
+      at TypeScriptParserMixin.tryParse (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:6924:20)
+      at TypeScriptParserMixin.parseMaybeAssign (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:9792:18)
+      at /media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10817:39
+      at TypeScriptParserMixin.allowInAnd (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:12443:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10817:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:12510:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:11692:28)
+      at TypeScriptParserMixin.parseExprAtom (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:11348:23)
+      at TypeScriptParserMixin.parseExprAtom (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:4776:20)
+      at TypeScriptParserMixin.parseExprSubscripts (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:11098:23)
+      at TypeScriptParserMixin.parseUpdate (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:11083:21)
+      at TypeScriptParserMixin.parseMaybeUnary (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:11063:23)
+      at TypeScriptParserMixin.parseMaybeUnary (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:9854:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10916:61)
+      at TypeScriptParserMixin.parseExprOps (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10921:23)
+      at TypeScriptParserMixin.parseMaybeConditional (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10898:23)
+      at TypeScriptParserMixin.parseMaybeAssign (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10848:21)
+      at TypeScriptParserMixin.parseMaybeAssign (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:9803:20)
+      at TypeScriptParserMixin.parseExpressionBase (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10801:23)
+      at /media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10797:39
+      at TypeScriptParserMixin.allowInAnd (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:12438:16)
+      at TypeScriptParserMixin.parseExpression (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:10797:17)
+      at TypeScriptParserMixin.parseReturnStatement (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:13159:28)
+      at TypeScriptParserMixin.parseStatementContent (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:12815:21)
+      at TypeScriptParserMixin.parseStatementContent (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:9525:18)
+      at TypeScriptParserMixin.parseStatementLike (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:12784:17)
+      at TypeScriptParserMixin.parseStatementListItem (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:12764:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:13333:61)
+      at TypeScriptParserMixin.parseBlockBody (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:13326:10)
+      at TypeScriptParserMixin.parseBlock (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:13314:10)
+      at TypeScriptParserMixin.parseFunctionBody (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:12117:24)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:12103:10)
+      at TypeScriptParserMixin.parseFunctionBodyAndFinish (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:9189:18)
+      at /media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:13462:12
+      at TypeScriptParserMixin.withSmartMixTopicForbiddingContext (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:12420:14)
+      at TypeScriptParserMixin.parseFunction (/media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/client/node_modules/@babel/parser/lib/index.js:13461:10)
+9:51:52 PM [vite] (client) hmr update /src/pages/ApplicantsPage.tsx
+10:39:33 PM [vite] vite.config.ts changed, restarting server...
+10:39:33 PM [vite] server restarted.
+
+  ➜  Local:   http://localhost:3000/admin/
+  ➜  Network: use --host to expose
+10:40:43 PM [vite] vite.config.ts changed, restarting server...
+10:40:43 PM [vite] server restarted.
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: use --host to expose
+10:42:36 PM [vite] vite.config.ts changed, restarting server...
+10:42:36 PM [vite] server restarted.
+
+  ➜  Local:   http://localhost:3000/admin/
+  ➜  Network: use --host to expose
+11:18:20 PM [vite] http proxy error: /api/admin/jobs?t=1783013600359
+Error: connect ECONNREFUSED 127.0.0.1:3001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1705:16)

@@ -1,0 +1,248 @@
+.container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.headerTitle h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.headerTitle p {
+  color: var(--text-muted);
+}
+
+.loadingState {
+  padding: 3rem;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.cardHeader {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--secondary);
+}
+
+.cardTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--foreground);
+}
+
+.cardTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.form {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.helperText {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.channelRow {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.channelHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--foreground);
+  font-size: var(--text-sm);
+}
+
+.channelHeader span:nth-child(2) {
+  flex: 1;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.fieldHint {
+  color: var(--text-muted);
+  font-size: var(--text-xs);
+  margin: 0.2rem 0 0;
+  line-height: 1.4;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+/* Toggle switch (main) */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: var(--muted);
+  transition: 0.2s;
+  border-radius: 999px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.2s;
+  border-radius: 50%;
+  box-shadow: var(--shadow-sm);
+}
+
+.toggle input:checked + .slider {
+  background-color: var(--success);
+}
+
+.toggle input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* Toggle switch (small, inline with channel headers) */
+.toggleSmall {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+  margin-left: auto;
+}
+
+.toggleSmall input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.sliderSmall {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: var(--muted);
+  transition: 0.2s;
+  border-radius: 999px;
+}
+
+.sliderSmall::before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.2s;
+  border-radius: 50%;
+}
+
+.toggleSmall input:checked + .sliderSmall {
+  background-color: var(--success);
+}
+
+.toggleSmall input:checked + .sliderSmall::before {
+  transform: translateX(16px);
+}
+
+.alertBox,
+.successBox,
+.infoBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+}
+
+.alertBox {
+  background: hsl(0, 72%, 96%);
+  color: var(--destructive);
+  border: 1px solid hsl(0, 72%, 88%);
+}
+
+.successBox {
+  background: hsl(158, 64%, 96%);
+  color: var(--success);
+  border: 1px solid hsl(158, 64%, 85%);
+}
+
+.infoBox {
+  background: hsl(200, 95%, 96%);
+  color: hsl(200, 80%, 35%);
+  border: 1px solid hsl(200, 60%, 85%);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 1.25rem;
+  }
+  .cardHeader {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+  .actions {
+    flex-direction: column-reverse;
+  }
+  .actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

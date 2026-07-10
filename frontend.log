@@ -1,0 +1,31 @@
+nohup: ignoring input
+
+> react-vite-tailwind@0.0.0 dev
+> vite
+
+
+  VITE v7.3.2  ready in 171 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+2:42:41 AM [vite] (client) hmr update /src/App.tsx, /src/index.css
+2:42:59 AM [vite] vite.config.ts changed, restarting server...
+2:42:59 AM [vite] server restarted.
+9:44:11 PM [vite] (client) hmr update /src/App.tsx, /src/index.css
+9:49:49 PM [vite] (client) hmr update /src/App.tsx, /src/index.css
+9:54:21 PM [vite] (client) hmr update /src/index.css
+10:57:45 PM [vite] changed tsconfig file detected: /media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+10:57:45 PM [vite] vite.config.ts changed, restarting server...
+10:57:45 PM [vite] (client) page reload Dockerfile
+10:57:45 PM [vite] (client) page reload README.md
+10:57:45 PM [vite] (client) page reload index.html
+10:57:45 PM [vite] (client) page reload package.json
+10:57:45 PM [vite] (client) page reload tsconfig.json
+10:57:45 PM [vite] (client) page reload src/App.tsx
+10:57:45 PM [vite] (client) hmr update /src/index.css
+10:57:45 PM [vite] (client) page reload src/jobData.ts
+10:57:45 PM [vite] (client) page reload src/main.tsx
+10:57:45 PM [vite] (client) page reload src/utils/cn.ts
+10:57:45 PM [vite] server restarted.
+11:06:47 PM [vite] (client) page reload index.html
+11:06:47 PM [vite] changed tsconfig file detected: /media/hiren/New Volume/Local SM /Hiring website/new-ademployee-panel/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.

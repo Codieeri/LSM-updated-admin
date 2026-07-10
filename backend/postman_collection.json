@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "c1f72922-bf44-42b7-8178-59a67a840e53",
+		"name": "LocalSM Admin Dashboard API",
+		"description": "API collection for testing local Express backend with MongoDB for the Admin Dashboard feature.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "General",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "Get All Jobs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/admin/jobs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Job",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Backend Engineer (Node.js)\",\n  \"category\": \"Backend Development\",\n  \"description\": \"Design and build performant Express APIs with MongoDB.\",\n  \"location\": \"Bangalore, India\",\n  \"salary\": \"₹15,00,000 - ₹20,00,000\",\n  \"experience\": \"3+ years\",\n  \"employmentType\": \"full_time\",\n  \"skills\": [\"Node.js\", \"Express\", \"MongoDB\", \"Mongoose\"],\n  \"openings\": 3,\n  \"isOpen\": true\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/admin/jobs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"jobs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Applications",
+			"item": [
+				{
+					"name": "Get All Applications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/admin/applications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"applications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Application",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userId\": \"replace_with_user_id\",\n  \"jobId\": \"replace_with_job_id\",\n  \"resume\": \"John_Doe_Backend_Resume.pdf\",\n  \"phone\": \"+91 9999911111\",\n  \"location\": \"Bangalore, India\",\n  \"yearsExperience\": \"4\",\n  \"expectedSalary\": \"₹18,00,000\",\n  \"status\": \"PENDING\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/admin/applications",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"admin",
+								"applications"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

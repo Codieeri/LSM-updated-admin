@@ -1,0 +1,171 @@
+.header {
+  height: var(--header-height);
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Hamburger menu button — hidden on desktop */
+.menuBtn {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--foreground);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-md);
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+.menuBtn:hover {
+  background: var(--secondary);
+}
+
+.left {
+  flex: 1;
+  min-width: 0;
+}
+
+.dateText {
+  font-size: var(--text-sm);
+  color: var(--muted-fg);
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.65rem;
+  color: var(--muted-fg);
+  pointer-events: none;
+}
+
+.searchInput {
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--foreground);
+  font-size: var(--text-sm);
+  font-family: var(--font-base);
+  padding: 0.45rem 0.875rem 0.45rem 2.1rem;
+  width: 220px;
+  outline: none;
+  transition: var(--transition);
+}
+.searchInput::placeholder { color: var(--muted-fg); opacity: 0.6; }
+.searchInput:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px hsl(200, 95%, 55%, 0.12);
+  width: 270px;
+  background: var(--card);
+}
+
+.notifBtn {
+  position: relative;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.notifDot {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 7px;
+  height: 7px;
+  background: var(--destructive);
+  border-radius: 50%;
+  border: 2px solid var(--card);
+}
+
+.userChip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.35rem 0.75rem 0.35rem 0.4rem;
+  cursor: pointer;
+  transition: var(--transition);
+  min-height: 44px;
+}
+.userChip:hover { background: var(--muted); }
+
+.avatar {
+  background: hsl(200, 95%, 55%, 0.12);
+  color: var(--accent);
+  border-color: hsl(200, 95%, 55%, 0.25);
+}
+
+.userName {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--foreground);
+  white-space: nowrap;
+}
+
+.roleBadge {
+  text-transform: capitalize;
+}
+
+/* ── Tablet ───────────────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .header { padding: 0 1.25rem; }
+  .searchInput { width: 180px; }
+  .searchInput:focus { width: 220px; }
+}
+
+/* ── Mobile ───────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .header { padding: 0 1rem; gap: 0.5rem; }
+
+  .menuBtn { display: flex; }
+
+  /* Hide search on mobile — too cramped */
+  .searchBox { display: none; }
+
+  /* Hide the date text on very small screens */
+  .dateText { display: none; }
+
+  /* Compact user chip on mobile — show avatar only */
+  .userName { display: none; }
+  .roleBadge { display: none; }
+  .userChip {
+    padding: 0.35rem;
+    background: transparent;
+    border-color: transparent;
+  }
+  .userChip:hover { background: var(--secondary); border-color: var(--border); }
+}
+
+/* ── Extra small (≤380px) ─────────────────────────────────────── */
+@media (max-width: 380px) {
+  .header { padding: 0 0.75rem; }
+}
