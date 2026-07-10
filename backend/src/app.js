@@ -21,6 +21,7 @@ const allowedOrigins = [
   'https://admin.localsm.tech',
   'https://www.admin.localsm.tech',
   'https://final-v4-admin.vercel.app',
+  'https://lsm-updated-admin-ngnr.vercel.app/login',
   'https://localsmhiring.vercel.app',
   'https://final-v4-admin.vercel.app',
   process.env.CLIENT_URL,
