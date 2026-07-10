@@ -17,10 +17,15 @@ const notificationSettingsSchema = new mongoose.Schema(
 );
 
 notificationSettingsSchema.statics.getSettings = async function () {
-  let settings = await this.findOne({ key: 'hr-notifications' });
-  if (!settings) {
-    settings = await this.create({ key: 'hr-notifications' });
-  }
+  // Atomic upsert avoids a race condition where two near-simultaneous
+  // requests (e.g. React StrictMode's double effect-invocation on first
+  // load) both see "no document yet" and both try to create one, which
+  // would throw a duplicate key error on the unique `key` field.
+  const settings = await this.findOneAndUpdate(
+    { key: 'hr-notifications' },
+    { $setOnInsert: { key: 'hr-notifications' } },
+    { new: true, upsert: true, setDefaultsOnInsert: true }
+  );
   return settings;
 };
 
